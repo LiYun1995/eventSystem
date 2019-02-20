@@ -14,8 +14,8 @@ module.exports = {
 
     // Various Dev Server settings
     host: 'localhost', // can be overwritten by process.env.HOST
-    port: 8080, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
-    autoOpenBrowser: false,
+    port: 8081, // can be overwritten by process.env.PORT, if port is in use, a free one will be determined
+    autoOpenBrowser: true,
     errorOverlay: true,
     notifyOnErrors: true,
     poll: false, // https://webpack.js.org/configuration/dev-server/#devserver-watchoptions-
@@ -65,5 +65,15 @@ module.exports = {
     // `npm run build --report`
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report
-  }
+  },
+  rules: [{
+    test: /\.less$/,
+    use: [{
+        loader: "style-loader" // creates style nodes from JS strings
+    }, {
+        loader: "css-loader" // translates CSS into CommonJS
+    }, {
+        loader: "less-loader" // compiles Less to CSS
+    }]
+}]
 }
