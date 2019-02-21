@@ -5,24 +5,35 @@
     </Row>
     <Row>
         <Col span="6"><Duty></Duty></Col>
-        <Col span="12">col-8</Col>
-        <Col span="6"> <Card>
-            <p slot="title">No border title</p>
-            <p>Content of no border type. Content of no border type. Content of no border type. Content of no border type. </p>
-        </Card></Col>
+        <Col span="12">&nbsp</Col>
+        <Col span="6"><Source></Source></Col>
     </Row>
      <Row>
-        <Col span="6"> <Slider v-model="value1"></Slider></Col>
-        <Col span="12">col-8</Col>
-        <Col span="6">col-8</Col>
+        <Col span="6"> 
+        <EventAlert>
+            <h1 style="float:left">事件报警</h1>
+            </EventAlert></Col>
+        <Col span="12">&nbsp</Col>
+        <Col span="6">
+        <ResourceAlert>
+            <h1 style="float:left">资源警报</h1>
+        </ResourceAlert>
+        </Col>
     </Row>
      <Row>
-        <Col span="6">col-8</Col>
-        <Col span="12">col-8</Col>
-        <Col span="6">col-8</Col>
+        <Col span="6"><EventAlert>
+            <h1 style="float:left">监测预警</h1>
+            </EventAlert></Col>
+        <Col span="12">&nbsp</Col>
+        <Col span="6">
+        <ResourceAlert>
+            <h1 style="float:left">系统警报</h1>
+            <Button style="float:right">系统详情</Button>
+        </ResourceAlert>
+        </Col>
     </Row>
      <Row>
-        <Col span="24">col-8</Col>
+        <Col span="24"><BottomNav></BottomNav></Col>
     </Row>
     </div>
 </template>
@@ -30,9 +41,13 @@
 <script>
     import HomeNav from '@/components/HomeIndex/nav'
     import Duty from '@/components/HomeIndex/duty'
+    import Source from '@/components/HomeIndex/source'
+    import EventAlert from '@/components/HomeIndex/eventAlert'
+    import ResourceAlert from '@/components/HomeIndex/resourceAlert'
+    import BottomNav from '@/components/HomeIndex/bottomNav'
     export default{
         name:'HomeIndex',
-        components:{HomeNav,Duty},
+        components:{HomeNav,Duty,Source,EventAlert,ResourceAlert,BottomNav},
         data(){
             return {
                 value1:25

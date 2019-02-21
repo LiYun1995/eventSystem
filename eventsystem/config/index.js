@@ -65,15 +65,5 @@ module.exports = {
     // `npm run build --report`
     // Set to `true` or `false` to always turn it on or off
     bundleAnalyzerReport: process.env.npm_config_report
-  },
-  rules: [{
-    test: /\.less$/,
-    use: [{
-        loader: "style-loader" // creates style nodes from JS strings
-    }, {
-        loader: "css-loader" // translates CSS into CommonJS
-    }, {
-        loader: "less-loader" // compiles Less to CSS
-    }]
-}]
+  }
 }

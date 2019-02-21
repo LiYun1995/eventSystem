@@ -5,11 +5,10 @@
             <h1 style="float:left">今日值班</h1>
             <Button type="primary" style="float:right">值班安排</Button>
             <Button style="float:right">值班简报</Button>
-          
           <Divider />
             <Carousel autoplay v-model="value2" loop height="300px">
             <CarouselItem v-for="item in photoaddress">
-                <div v-html="item.photoDom"></div>
+                <img :src="item.photoDom" />
             </CarouselItem>
     </Carousel>
     
@@ -25,10 +24,10 @@
                 value2: 0,
                 photoaddress:[
                 {
-                    photoDom:"<div class=\"demo-carousel\">1</div>"
+                    photoDom:require("./1.png")
                 },
                 {
-                    photoDom:"<div class=\"demo-carousel\">2</div>"
+                    photoDom:require("./2.png")
                 }
                 ]
             }

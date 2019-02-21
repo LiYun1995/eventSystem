@@ -6,10 +6,11 @@ import router from './router'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import '../mt-theme/dist/iview.css'
-
+import echarts from 'echarts'
 
 Vue.config.productionTip = false
 Vue.use(iView)
+Vue.prototype.$echarts = echarts
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
