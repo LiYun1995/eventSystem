@@ -1,7 +1,7 @@
 <template>
     <div>
         <Card>
-            <Menu mode="horizontal" :theme="theme1" active-name="1">
+            <Menu mode="horizontal" active-name="1">
         <MenuItem name="1">
             <Icon type="md-videocam" />
             摄像头

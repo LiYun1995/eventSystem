@@ -6,7 +6,7 @@
             <Button type="primary" style="float:right">值班安排</Button>
             <Button style="float:right">值班简报</Button>
           <Divider />
-            <Carousel autoplay v-model="value2" loop height="300px">
+            <Carousel autoplay v-model="value2" loop>
             <CarouselItem v-for="item in photoaddress">
                 <img :src="item.photoDom" />
             </CarouselItem>
