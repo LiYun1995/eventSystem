@@ -6,6 +6,15 @@
             <Divider />
              <Table border :columns="columns1" :data="data1" align="center"></Table>
         </Card>
+        <Modal
+        v-model="modal1"
+        title="Common Modal dialog box title"
+        @on-ok="ok"
+        @on-cancel="cancel">
+        <p>Content of dialog</p>
+        <p>Content of dialog</p>
+        <p>Content of dialog</p>
+    </Modal>
     </div>
 </template>
 
@@ -14,6 +23,7 @@ export default {
     name:'EventAlert',
       data () {
             return {
+                modal1:false,
                 columns1: [
                     {
                         title: '事件',
@@ -28,9 +38,15 @@ export default {
                         key: 'operation',
                         render:(h,params) => {
                             return h('div',[h('Button',{props:{
-                                type:'text',
-                                size:'small'
-                            }},'查看')])
+                                type:'primary',
+                                size:'small',
+                            },
+                            on:{
+                                click:() => {
+                                    this.modal1 = true;
+                                }
+                            }
+                            },'查看')])
                         }
                     }
                 ],
@@ -60,6 +76,14 @@ export default {
                         date: '2016-10-04'
                     }
                 ]
+            }
+        },
+           methods:{
+            ok(){
+                this.$Message.info('Click ok');
+            },
+            cancel(){
+                this.$Message.info('Click cancel')
             }
         }
 }
