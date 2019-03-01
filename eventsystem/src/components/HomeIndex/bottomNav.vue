@@ -1,28 +1,82 @@
 <template>
     <div>
-        <Card>
-            <Menu mode="horizontal" active-name="1">
-        <MenuItem name="1">
-            <Icon type="md-videocam" />
-            摄像头
-        </MenuItem>
-        <MenuItem name="2">
-            <Icon type="logo-codepen" />
-            物资
-        </MenuItem>
-        <MenuItem name="3">
-            <Icon type="md-car" />
-            车辆
-        </MenuItem>
-    </Menu>
+        <Card style="width:100%;height:81px">
+           <ul id="bottomList">
+               <li @class="listFamily" v-for="item in list">
+
+               </li>
+           </ul>
         </Card>
     </div>
 </template>
 
 <script>
 export default {
-    name:'BottomNav'
+    name:'BottomNav',
+    data(){
+        return {
+            list:[
+                {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            },
+            {
+                    bgAddress:'',
+                    icoAddress:''
+            }
+            ]
+        }
+    }
 }
 </script>
+
+<style>
+    #bottomList{
+        display: inline-block;
+        list-style: none;
+        width: 500px;
+        background: red;
+        height: 100%;
+    }
+    .listFamily{
+        display: inline-block;
+        width: 66px;
+        height: 66px;
+        
+        margin: 0 5px;
+    }
+</style>
 
 

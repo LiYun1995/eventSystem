@@ -17,6 +17,11 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 20px;
+}
+h1{
+  font-family: MicrosoftYaHei-Bold;
+  font-weight: bold;
+  font-size: 24px;
+  color: #B5BCFF
 }
 </style>

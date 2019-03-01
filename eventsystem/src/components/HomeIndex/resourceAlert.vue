@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Card>
+        <Card style="height:218px;float:right">
             <slot></slot>
             <Divider />
             <CellGroup>
