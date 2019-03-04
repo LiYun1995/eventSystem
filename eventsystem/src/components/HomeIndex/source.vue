@@ -6,12 +6,15 @@
             <img src="../../../source/img/index/右侧/index-count.png" alt="">
             <Button size="small" style="float:right;margin:8px 20px" ghost>资源详情</Button>
             </div>
+            <div class="card-container">
+                <div id="chartmain"></div>
+            </div>
         </Card>
     </div>
 </template>
 
 <script>
-export default {
-   
+export default{
+
 }
 </script>

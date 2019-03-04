@@ -6,11 +6,25 @@
     <Row>
         <Col span="6"><Duty></Duty></Col>
         <Col span="12">&nbsp</Col>
-        <Col span="6"> <ResourceAlert>
+        <Col span="6">
+        <ResourceAlert>
+            <template v-slot:top-slot>
             <h1 style="float:left">| 资源警报</h1>
             <img src="../../../source/img/index/右侧/index-natural.png" alt="">
             <a href="#">更多</a>
-        </ResourceAlert></Col>
+            </template>
+            <template v-slot:container-slot>
+                <ul class="resourceUl">
+                    <li v-for="item in resourceList">
+                        <span class="resourceContent">
+                            <font>{{item.name}}</font>
+                            <font>{{item.time}}</font>
+                        </span>
+                    </li>
+                </ul>
+            </template>
+        </ResourceAlert>
+        </Col>
     </Row>
      <Row>
         <Col span="6"> 
@@ -21,9 +35,22 @@
         <Col span="12">&nbsp</Col>
         <Col span="6">
        <ResourceAlert>
+            <template v-slot:top-slot>
             <h1 style="float:left">| 系统警报</h1>
             <img src="../../../source/img/index/右侧/index-system.png" alt="">
              <Button style="float:right;margin:8px 20px" size="small"  ghost>系统详情</Button>
+            </template>
+
+             <template v-slot:container-slot>
+                <ul class="resourceUl">
+                    <li v-for="item in systemList">
+                        <span class="resourceContent">
+                            <font>{{item.name}}</font>
+                            <font>{{item.time}}</font>
+                        </span>
+                    </li>
+                </ul>
+            </template>
         </ResourceAlert>
         </Col>
     </Row>
@@ -57,9 +84,47 @@
         components:{HomeNav,Duty,Source,EventAlert,ResourceAlert,BottomNav,EventFeel},
         data(){
             return {
-                value1:25
+                value1:25,
+                resourceList:[
+                    {
+                        name:'灭火器即将过保质期',
+                        time:'2月18日 09:16:12'
+                    },
+                     {
+                        name:'车辆已到保养期',
+                        time:'2月18日 09:16:12'
+                    }
+                ],
+                systemList:[
+                     {
+                        name:'硬盘剩余空间小于20%',
+                        time:'2月18日 09:16:12'
+                    },
+                     {
+                        name:'摄像头通信故障',
+                        time:'2月18日 09:16:12'
+                    }
+                ]
             }
         }
     }
 </script>
+
+<style>
+    .resourceUl li{
+        display: inline-block;
+        width: 100%;
+        height: 30px;
+        margin-top: 10px 0;
+    }
+    .resourceContent :nth-child(1){
+        float: left;
+        margin: 0 10px;
+    }
+    .resourceContent :nth-child(2){
+        float: right;
+        margin: 0 10px;
+    }
+</style>
+
 

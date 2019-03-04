@@ -48,4 +48,11 @@ h1{
   float: left;
   margin-top: 13px;
 }
+.card-container{
+  width: 100%;
+  color: #FFFFFF;
+}
+.card-container img{
+  float: left;
+}
 </style>
