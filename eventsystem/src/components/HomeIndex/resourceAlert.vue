@@ -1,13 +1,9 @@
 <template>
     <div>
         <Card style="height:218px;float:right">
+            <div class="card-container-top">
             <slot></slot>
-            <Divider />
-            <CellGroup>
-                <Cell title="Display right content" extra="查看" />
-                <Cell title="Display right content" extra="查看" />
-                <Cell title="Display right content" extra="查看" />
-            </CellGroup>
+            </div>
         </Card>
     </div>
 </template>

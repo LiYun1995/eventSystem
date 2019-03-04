@@ -19,9 +19,33 @@ export default {
   color: #2c3e50;
 }
 h1{
-  font-family: MicrosoftYaHei-Bold;
+  font-family: 'MicrosoftYaHei-Bold';
   font-weight: bold;
   font-size: 24px;
   color: #B5BCFF
+}
+.card-container-top{
+  width: 100%;
+  height: 40px;
+  margin-top: 10px;
+  text-align: center;
+  background-image: url('../source/img/index/右侧/index-light.png');
+  background-size: 160px 70px;
+  background-position: -10px 0px ;
+  background-repeat:no-repeat
+}
+.card-container-top h1{
+  float: left;
+  margin: 0 10px;
+}
+.card-container-top a{
+  color: #FFFFFF;
+  font-size: 13px;
+  float: right;
+  margin: 16px 26px
+}
+.card-container-top img{
+  float: left;
+  margin-top: 13px;
 }
 </style>

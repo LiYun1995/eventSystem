@@ -1,9 +1,10 @@
 <template>
     <div>
         <Card style="height:218px">
-            <slot></slot>
+            <div class="card-container-top">
+                <slot></slot>
+            </div>
             
-            <Divider />
              
         </Card>
        
