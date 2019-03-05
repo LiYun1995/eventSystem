@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Card style="height:218px">
+        <div class="commonContainer" style="height:218px">
             <div class="card-container-top">
                 <slot></slot>
             </div>
@@ -16,7 +16,7 @@
                 </ul>
             </div>
              
-        </Card>
+        </div>
        
     </div>
 </template>

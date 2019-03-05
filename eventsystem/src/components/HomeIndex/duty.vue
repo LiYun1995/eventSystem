@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Card style="height:260px">
+         <div class="commonContainer" style="height:260px">
             <div class="card-container-top">
                 <h1>| 今日值班</h1>
                 <span style="display:inline-block;width:160px;height:100%;float:left;padding:8px 2px">
@@ -25,7 +25,7 @@
                     </li>
                 </ul>
             </div>
-        </Card>
+         </div>
     </div>
 </template>
 

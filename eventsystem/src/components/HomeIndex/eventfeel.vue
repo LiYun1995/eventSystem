@@ -1,6 +1,6 @@
 <template>
     <div>
-        <card style="height:450px">
+        <div class="commonContainer" style="height:450px">
             <div class="card-container-top">
             <h1>| 事件感知</h1>
             <a href="#" style="float:right">更多</a>
@@ -31,7 +31,7 @@
                     </ul>
                 </div>
             </div>
-        </card>
+        </div>
     </div>
 </template>
 

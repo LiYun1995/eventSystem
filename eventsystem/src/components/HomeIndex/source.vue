@@ -1,6 +1,6 @@
 <template>
     <div>
-        <Card style="height:450px;float:right">
+        <div class="commonContainer" style="height:450px;float:right">
             <div class="card-container-top">
             <h1 style="float:left">| 资源统计</h1>
             <img src="../../../source/img/index/右侧/index-count.png" alt="">
@@ -14,7 +14,7 @@
                     </ul>
                 </div>
             </div>
-        </Card>
+        </div>
     </div>
 </template>
 

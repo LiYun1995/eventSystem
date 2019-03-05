@@ -1,9 +1,8 @@
 @card-prefix-cls: ~"@{css-prefix}card";
 
 .@{card-prefix-cls}{
-    background: rgba(24,34,126,0.8);
-    width: 304px;
-    border-radius: 5px;
+    background: #fff;
+    border-radius: @border-radius-small;
     font-size: @font-size-base;
     position: relative;
     //overflow: hidden;
@@ -43,5 +42,9 @@
         position: absolute;
         right: 16px;
         top: 14px;
+    }
+
+    &-body {
+        padding: 16px;
     }
 }

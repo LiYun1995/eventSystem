@@ -55,4 +55,11 @@ h1{
 .card-container img{
   float: left;
 }
+.commonContainer{
+  width:304px;
+  background:rgba(24,34,126,0.8);
+  border-radius:5px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
 </style>
