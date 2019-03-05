@@ -1,9 +1,9 @@
 <template>
     <div>
-        <div style="width:100%;height:81px;background:#18227E;border-radius:5px;">
+        <div style="width:100%;height:81px;background:rgba(24,34,126,0.8);border-radius:5px;">
            <ul id="bottomList">
                <li class="listFamily" v-for="item in list">
-                   <span :class="{'classA':item.isA,'classB':item.isB}">   
+                   <span :class="{'classA':item.isA,'classB':item.isB}" >   
                        <img :src="item.icoAddress">
                        <p>{{item.listTitle}}</p>
                    </span>
@@ -104,6 +104,7 @@ export default {
         list-style: none;
         width: 100%;
         height: 100%;
+        
     }
     .listFamily{
         display: inline-block;

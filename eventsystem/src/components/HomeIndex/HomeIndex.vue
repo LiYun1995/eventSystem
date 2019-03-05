@@ -1,5 +1,8 @@
 <template>
+    
     <div>
+        <MapView></MapView>
+        <div style="position:absolute;top:0px;left:0px">
     <Row>
         <Col span="24"><HomeNav></HomeNav></Col>
     </Row>
@@ -69,7 +72,9 @@
         <Col span="7">&nbsp</Col>
     </Row>
     </div>
+    </div>
 </template>
+
 
 <script>
     import HomeNav from '@/components/HomeIndex/nav'
@@ -79,9 +84,10 @@
     import ResourceAlert from '@/components/HomeIndex/resourceAlert'
     import BottomNav from '@/components/HomeIndex/bottomNav'
     import EventFeel from '@/components/HomeIndex/eventfeel'
+    import MapView from '@/components/Mapview'
     export default{
         name:'HomeIndex',
-        components:{HomeNav,Duty,Source,EventAlert,ResourceAlert,BottomNav,EventFeel},
+        components:{HomeNav,Duty,Source,EventAlert,ResourceAlert,BottomNav,EventFeel,MapView},
         data(){
             return {
                 value1:25,
@@ -106,6 +112,9 @@
                     }
                 ]
             }
+        },
+        created(){
+                  
         }
     }
 </script>
@@ -124,6 +133,10 @@
     .resourceContent :nth-child(2){
         float: right;
         margin: 0 10px;
+    }
+    .map{
+        width: 100%;
+        height: 100%;
     }
 </style>
 

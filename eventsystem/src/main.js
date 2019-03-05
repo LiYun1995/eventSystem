@@ -7,10 +7,15 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import '../mt-theme/dist/iview.css'
 import echarts from 'echarts'
+import BaiduMap from 'vue-baidu-map'
+
 
 Vue.config.productionTip = false
 Vue.use(iView)
 Vue.prototype.$echarts = echarts
+Vue.use(BaiduMap,{
+  ak:'LW8kCWZboNKNbfMMgI6u5CGi0ZtG2FLK'
+})
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
