@@ -6,6 +6,7 @@ import router from './router'
 import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import '../my-theme/dist/iview.css'
+import './style/reset.css'
 import echarts from 'echarts'
 import BaiduMap from 'vue-baidu-map'
 
