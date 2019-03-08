@@ -9,6 +9,7 @@ import '../my-theme/dist/iview.css'
 import './style/reset.css'
 import echarts from 'echarts'
 import BaiduMap from 'vue-baidu-map'
+import DataList from './data/data.js'
 
 
 Vue.config.productionTip = false
@@ -17,6 +18,7 @@ Vue.prototype.$echarts = echarts
 Vue.use(BaiduMap,{
   ak:'LW8kCWZboNKNbfMMgI6u5CGi0ZtG2FLK'
 })
+Vue.prototype.$DataList = DataList
 /* eslint-disable no-new */
 new Vue({
   el: '#app',

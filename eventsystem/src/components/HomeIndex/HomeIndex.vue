@@ -38,11 +38,11 @@
         </Col>
         <Col span="12">&nbsp</Col>
         <Col span="6">
-          <ResourceAlert>
+          <ResourceAlert ref="ResourceAlert" :message='systemList'>
             <template v-slot:top-slot>
               <h1 style="float:left">| 系统警报</h1>
               <img src="../../../source/img/index/右侧/index-system.png" alt>
-              <Button style="float:right;margin:8px 20px" size="small" ghost>系统详情</Button>
+              <Button style="float:right;margin:8px 20px" size="small" ghost @click="modleSys">系统详情</Button>
             </template>
 
             <template v-slot:container-slot>
@@ -125,7 +125,11 @@ export default {
       ]
     };
   },
-  created() {}
+  methods:{
+    modleSys:function(){
+      this.$refs.ResourceAlert.modleControl();
+    }
+  }
 };
 </script>
 
