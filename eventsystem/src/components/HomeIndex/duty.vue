@@ -4,7 +4,7 @@
       <div class="card-container-top">
         <h1>| 今日值班</h1>
         <span style="display:inline-block;width:160px;height:100%;float:left;padding:8px 2px">
-          <Button style="margin:0 6px" size="small" ghost @click="modlePlan = true">值班安排</Button>
+          <Button style="margin:0 6px" size="small" ghost @click="dutyPlan = true">值班安排</Button>
          
           <Button size="small" ghost @click="modleBul = true">值班简报</Button>
 
@@ -63,17 +63,25 @@
         </Modal>
       </div>
     </div>
+    <Modal v-model="dutyPlan" width="1000" :closable="false" :footer-hide="true" class-name="vertical-center-modal">
+          <div>
+           <Calendar></Calendar>
+          </div>
+        </Modal>
   </div>
 </template>
 
 <script>
+import Calendar from "@/components/HomeIndex/calendar"
 export default {
   name: "Duty",
+  components:{Calendar},
   data() {
     return {
       modleList: false,
       modlePlan:false,
       modleBul:false,
+      dutyPlan:false,
       dutyList: [
         {
           name: "张三",

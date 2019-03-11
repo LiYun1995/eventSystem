@@ -25,3 +25,17 @@ margin-bottom: 42px;
 .ivu-modal{
     top: 0;
 }
+.ivu-menu-primary{
+    background: #016BD8;
+    height: 65px;
+}
+.ivu-menu-item{
+    font-size: 24px;
+}
+
+.ivu-menu-primary.ivu-menu-horizontal .ivu-menu-item-active, .ivu-menu-primary.ivu-menu-horizontal .ivu-menu-item:hover, .ivu-menu-primary.ivu-menu-horizontal .ivu-menu-submenu-active, .ivu-menu-primary.ivu-menu-horizontal .ivu-menu-submenu:hover{
+    background: #016BD8;
+    border-bottom: 2px solid #FFFFFF;
+}
+
+

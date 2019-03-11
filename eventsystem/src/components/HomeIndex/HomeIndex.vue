@@ -1,6 +1,6 @@
 <template>
   <div>
-    <MapView style="height:1100px"></MapView>
+    <MapView style="position:relative;height:1100px"></MapView>
     <div style="position:absolute;top:0px;left:0px">
       <Row>
         <Col span="24">
