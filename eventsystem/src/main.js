@@ -7,6 +7,7 @@ import iView from 'iview';
 import 'iview/dist/styles/iview.css';
 import '../my-theme/dist/iview.css'
 import './style/reset.css'
+import './style/main.css'
 import echarts from 'echarts'
 import BaiduMap from 'vue-baidu-map'
 import DataList from './data/data.js'

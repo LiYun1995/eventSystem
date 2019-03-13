@@ -1,0 +1,32 @@
+.left_nav{
+    width: 246px;
+    height: 880px;
+    background: #19394C;
+}
+.left_nav_list{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+}
+.left_nav_list li{
+    display: inline-block;
+    width: 100%;
+    height: 76px;
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 10px 10px;
+    cursor: pointer;
+}
+.left_nav_list li:hover{
+    background: #131E25;
+}
+.left_nav_list li img{
+    float: left;
+    margin-top:10px;
+    margin-left: 56px;
+}
+.left_nav_list li span{
+    float: left;
+    margin-top:10px;
+    margin-left: 26px;
+}

@@ -18,7 +18,7 @@
         <ul class="date_row">
             <li v-for="row in 6" class="date_row_li">
                 <ul class="date_col">
-                    <li v-for="col in testarr" class="showDate">
+                    <li v-for="col in 7" class="showDate">
                         {{col}}
                     </li>
                 </ul>
